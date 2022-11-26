@@ -1,0 +1,19 @@
+@use "./Components/navbar";
+@use "./Components/footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    background-color: #293462;
+}

@@ -1,0 +1,10 @@
+@mixin flex-container ($direction, $space, $items) {
+    display: flex;
+    align-items: $items;
+    flex-direction: $direction;
+    justify-content: $space;    
+}
+
+@mixin shadow ($color) {
+    box-shadow: 6px 8px 16px 0px $color;
+}
