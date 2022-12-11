@@ -1,29 +1,41 @@
 @use "./mixins";
 
+.Home {
+    section, img {
+        margin: 2vh;
+        padding: 1vh;
+    }
+}
 .Home-Presentacion {
     @include mixins.flex-container(row, center, center);
-    div.info {
-        @include mixins.flex-container(column, none, none);
+    .info {
+        @include mixins.flex-container(column, flex-start, flex-start);
         gap: 2vh;
-        h2 {
-            align-self: flex-start;
-            justify-self: flex-start;
-            border: 1px solid red;
-        }
-        p {
-            text-align: left;
-            border: 1px solid red;
+        h1 {
+            font-size: 2rem;
         }
         ul {
             margin-left: 1vw;
         }
     }
-    div.photo {
-        @include mixins.flex-container(column, center, center);
-        img {
-            border-radius: 15px;
-        }
+    img {
+        border-radius: 15px;
     }
 }
 .Home-Educacion {
+    @include mixins.flex-container(column, flex-start, flex-start);
+    h2 {
+        font-size: 2rem;
+        margin: 2vh;
+        padding: 1vh;
+    }
+    .ed-info {
+        @include mixins.flex-container(row, flex-start, flex-start);
+        gap: 2vw;
+        width: 98%;
+        article {
+            @include mixins.flex-container(column, flex-start, flex-start);
+            width: 50%;
+        }
+    }
 }

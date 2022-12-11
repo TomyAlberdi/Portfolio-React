@@ -69,39 +69,59 @@
     content: none;
   }
 }
+.Home section, .Home img {
+  margin: 2vh;
+  padding: 1vh;
+}
+
 .Home-Presentacion {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
-.Home-Presentacion div.info {
+.Home-Presentacion .info {
   display: flex;
-  align-items: none;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: none;
+  justify-content: flex-start;
   gap: 2vh;
 }
-.Home-Presentacion div.info h2 {
-  align-self: flex-start;
-  justify-self: flex-start;
-  border: 1px solid red;
+.Home-Presentacion .info h1 {
+  font-size: 2rem;
 }
-.Home-Presentacion div.info p {
-  text-align: left;
-  border: 1px solid red;
-}
-.Home-Presentacion div.info ul {
+.Home-Presentacion .info ul {
   margin-left: 1vw;
 }
-.Home-Presentacion div.photo {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.Home-Presentacion div.photo img {
+.Home-Presentacion img {
   border-radius: 15px;
+}
+
+.Home-Educacion {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.Home-Educacion h2 {
+  font-size: 2rem;
+  margin: 2vh;
+  padding: 1vh;
+}
+.Home-Educacion .ed-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2vw;
+  width: 98%;
+}
+.Home-Educacion .ed-info article {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
 }
 
 * {
@@ -127,6 +147,6 @@ main div {
   padding: 2vh;
   border-radius: 15px;
   background-color: #222b51;
-  width: 96%;
+  width: 97%;
   min-width: 75vh;
 }/*# sourceMappingURL=App.css.map */
