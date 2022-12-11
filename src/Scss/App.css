@@ -69,9 +69,8 @@
     content: none;
   }
 }
-.Home section, .Home img {
-  margin: 2vh;
-  padding: 1vh;
+.Home img {
+  margin-left: 2vh;
 }
 
 .Home-Presentacion {
@@ -98,30 +97,27 @@
 }
 
 .Home-Educacion {
+  margin-top: 0vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 2vh;
 }
 .Home-Educacion h2 {
   font-size: 2rem;
-  margin: 2vh;
-  padding: 1vh;
 }
 .Home-Educacion .ed-info {
   display: flex;
-  align-items: flex-start;
+  align-items: right;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 2vw;
-  width: 98%;
 }
 .Home-Educacion .ed-info article {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-  width: 50%;
 }
 
 * {
@@ -142,9 +138,15 @@ body {
   background-color: #293462;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 main div {
-  margin: 3vh;
-  padding: 2vh;
+  margin: 3vh 0;
+  padding: 3vh;
   border-radius: 15px;
   background-color: #222b51;
   width: 97%;

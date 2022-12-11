@@ -1,9 +1,8 @@
 @use "./mixins";
 
 .Home {
-    section, img {
-        margin: 2vh;
-        padding: 1vh;
+    img {
+        margin-left: 2vh;
     }
 }
 .Home-Presentacion {
@@ -23,19 +22,16 @@
     }
 }
 .Home-Educacion {
+    margin-top: 0vh;
     @include mixins.flex-container(column, flex-start, flex-start);
+    gap: 2vh;
     h2 {
         font-size: 2rem;
-        margin: 2vh;
-        padding: 1vh;
     }
     .ed-info {
-        @include mixins.flex-container(row, flex-start, flex-start);
-        gap: 2vw;
-        width: 98%;
+        @include mixins.flex-container(row, flex-start, right);
         article {
             @include mixins.flex-container(column, flex-start, flex-start);
-            width: 50%;
         }
     }
 }

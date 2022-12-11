@@ -1,3 +1,4 @@
+@use "./Components/mixins";
 @use "./Components/navbar";
 @use "./Components/footer";
 @use "./Components/home";
@@ -18,11 +19,14 @@ body {
     overscroll-behavior-x: none;
     background-color: #293462;
 }
-main div {
-    margin: 3vh;
-    padding: 2vh;
-    border-radius: 15px;
-    background-color: #222b51;
-    width: 97%;
-    min-width: 75vh;
+main {
+    @include mixins.flex-container(column, center, center);
+    div {
+        margin: 3vh 0;
+        padding: 3vh;
+        border-radius: 15px;
+        background-color: #222b51;
+        width: 97%;
+        min-width: 75vh;
+    }
 }
