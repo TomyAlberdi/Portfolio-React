@@ -1,0 +1,29 @@
+@use "./mixins";
+
+.Home-Presentacion {
+    @include mixins.flex-container(row, center, center);
+    div.info {
+        @include mixins.flex-container(column, none, none);
+        gap: 2vh;
+        h2 {
+            align-self: flex-start;
+            justify-self: flex-start;
+            border: 1px solid red;
+        }
+        p {
+            text-align: left;
+            border: 1px solid red;
+        }
+        ul {
+            margin-left: 1vw;
+        }
+    }
+    div.photo {
+        @include mixins.flex-container(column, center, center);
+        img {
+            border-radius: 15px;
+        }
+    }
+}
+.Home-Educacion {
+}
