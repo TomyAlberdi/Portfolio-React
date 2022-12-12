@@ -1,0 +1,130 @@
+@use "./mixins";
+
+.Projects {
+    @include mixins.flex-container(column, center, center);
+    overflow: hidden;
+    gap: 3vh;
+    .container-proyectos {
+        @include mixins.flex-container(row, center, stretch);
+        overflow: hidden;
+        min-width: 600px;
+        max-width: 900px;
+        width: calc(100% - 100px);
+        height: 67vh;
+        article.proyecto {
+            border: 1px solid red;
+            &:hover {
+                transform: scale(1.03);
+                transition: 0.7s ease all;
+                transition-delay: 0s;
+            }
+            transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+            position: relative;
+            overflow: hidden;
+            min-width: 60px;
+            margin: 10px;
+            cursor: pointer;
+            img {
+                width: 100%;
+            }
+            &.active {
+                flex-grow: 10000;
+                transform: scale(1);
+                max-width: 600px;
+                margin: 0;
+                border-radius: 20px;
+                background-size: auto 100%;
+                .label {
+                    bottom: 0;
+                    left: 0;
+                    img {
+                        opacity: 1;
+                        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+                    }
+                    .bar {
+                        bottom: 10px;
+                        left: 10px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        padding: 10px;
+                        border-radius: 20px;
+                        backdrop-filter: blur(20px);
+                    }
+                    .info > h2 {
+                        left: 0px;
+                        opacity: 1;
+                    }
+                }
+                
+            }
+            &:not(.active) {
+                flex-grow: 1;
+                border-radius: 30px;
+                .label {
+                    bottom: 10px;
+                    left: 10px; 
+                    img {
+                        opacity: 0;
+                        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+                    }
+                    .icons {
+                        opacity: 0;
+                        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+                    }
+                    .info > h2 {
+                        left: 20px;
+                        opacity: 0;
+                    }
+                }
+            }
+            .label {
+                position: absolute;
+                right: 0px;
+                height: 100%;
+                transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+                .number {
+                    @include mixins.flex-container(row, center, center);
+                    min-width: 40px;
+                    max-width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: white;
+                    h2 {
+                      color: black;
+                    }
+                }
+                .bar {
+                    display: flex;
+                    position: absolute;
+                    bottom: 0;
+                    width: 96%;
+                }
+                .info {
+                    @include mixins.flex-container(column, center, center);
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 10px;
+                    color: white;
+                    white-space: pre;
+                    > h2 {
+                        position: relative;
+                        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+                        opacity 0.5s ease-out;
+                    }
+                    .icons {
+                        display: flex;
+                        position: absolute;
+                        right: 10px;
+                        gap: 0.5vw;
+                        i {
+                            font-size: 2rem;
+                        }
+                    }
+                    h2 {
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

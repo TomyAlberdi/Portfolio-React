@@ -69,10 +69,6 @@
     content: none;
   }
 }
-.Home img {
-  margin-left: 2vh;
-}
-
 .Home-Presentacion {
   display: flex;
   align-items: center;
@@ -94,10 +90,11 @@
 }
 .Home-Presentacion img {
   border-radius: 15px;
+  margin-left: 2vh;
 }
 
 .Home-Educacion {
-  margin-top: 0vh;
+  margin-top: 0.25vh !important;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -118,6 +115,146 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.Projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  gap: 3vh;
+}
+.Projects .container-proyectos {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 600px;
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 67vh;
+}
+.Projects .container-proyectos article.proyecto {
+  border: 1px solid red;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  cursor: pointer;
+}
+.Projects .container-proyectos article.proyecto:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease all;
+  transition-delay: 0s;
+}
+.Projects .container-proyectos article.proyecto img {
+  width: 100%;
+}
+.Projects .container-proyectos article.proyecto.active {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0;
+  border-radius: 20px;
+  background-size: auto 100%;
+}
+.Projects .container-proyectos article.proyecto.active .label {
+  bottom: 0;
+  left: 0;
+}
+.Projects .container-proyectos article.proyecto.active .label img {
+  opacity: 1;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.Projects .container-proyectos article.proyecto.active .label .bar {
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.Projects .container-proyectos article.proyecto.active .label .info > h2 {
+  left: 0px;
+  opacity: 1;
+}
+.Projects .container-proyectos article.proyecto:not(.active) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+.Projects .container-proyectos article.proyecto:not(.active) .label {
+  bottom: 10px;
+  left: 10px;
+}
+.Projects .container-proyectos article.proyecto:not(.active) .label img {
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.Projects .container-proyectos article.proyecto:not(.active) .label .icons {
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.Projects .container-proyectos article.proyecto:not(.active) .label .info > h2 {
+  left: 20px;
+  opacity: 0;
+}
+.Projects .container-proyectos article.proyecto .label {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.Projects .container-proyectos article.proyecto .label .number {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+}
+.Projects .container-proyectos article.proyecto .label .number h2 {
+  color: black;
+}
+.Projects .container-proyectos article.proyecto .label .bar {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+}
+.Projects .container-proyectos article.proyecto .label .info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+.Projects .container-proyectos article.proyecto .label .info > h2 {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+.Projects .container-proyectos article.proyecto .label .info .icons {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  gap: 0.5vw;
+}
+.Projects .container-proyectos article.proyecto .label .info .icons i {
+  font-size: 2rem;
+}
+.Projects .container-proyectos article.proyecto .label .info h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 * {
@@ -144,7 +281,7 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-main div {
+main div.Main {
   margin: 3vh 0;
   padding: 3vh;
   border-radius: 15px;

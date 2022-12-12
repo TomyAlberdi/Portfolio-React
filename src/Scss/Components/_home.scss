@@ -1,10 +1,5 @@
 @use "./mixins";
 
-.Home {
-    img {
-        margin-left: 2vh;
-    }
-}
 .Home-Presentacion {
     @include mixins.flex-container(row, center, center);
     .info {
@@ -19,10 +14,11 @@
     }
     img {
         border-radius: 15px;
+        margin-left: 2vh;
     }
 }
 .Home-Educacion {
-    margin-top: 0vh;
+    margin-top: 0.25vh !important;
     @include mixins.flex-container(column, flex-start, flex-start);
     gap: 2vh;
     h2 {
