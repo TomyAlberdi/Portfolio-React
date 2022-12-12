@@ -18,6 +18,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
+    z-index: 1000;
   }
   .Navbar img {
     height: 12vh;
@@ -123,7 +124,8 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  gap: 3vh;
+  background-color: inherit !important;
+  padding: 0 !important;
 }
 .Projects .container-proyectos {
   display: flex;
@@ -132,12 +134,11 @@
   justify-content: center;
   overflow: hidden;
   min-width: 600px;
-  max-width: 900px;
+  max-width: 1400px;
   width: calc(100% - 100px);
-  height: 67vh;
+  height: 80vh;
 }
 .Projects .container-proyectos article.proyecto {
-  border: 1px solid red;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
   position: relative;
   overflow: hidden;
@@ -151,12 +152,12 @@
   transition-delay: 0s;
 }
 .Projects .container-proyectos article.proyecto img {
-  width: 100%;
+  height: 100%;
 }
 .Projects .container-proyectos article.proyecto.active {
   flex-grow: 10000;
   transform: scale(1);
-  max-width: 600px;
+  max-width: 1400px;
   margin: 0;
   border-radius: 20px;
   background-size: auto 100%;
@@ -226,7 +227,7 @@
   display: flex;
   position: absolute;
   bottom: 0;
-  width: 96%;
+  width: 98%;
 }
 .Projects .container-proyectos article.proyecto .label .info {
   display: flex;
@@ -255,6 +256,31 @@
 .Projects .container-proyectos article.proyecto .label .info h2 {
   font-weight: bold;
   font-size: 1.2rem;
+}
+.Projects .container-proyectos article.proyecto:nth-child(1) {
+  background: rgb(15, 20, 36);
+  background: linear-gradient(0deg, rgb(15, 20, 36) 0%, rgb(28, 31, 74) 50%, rgb(88, 71, 235) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1424",endColorstr="#5847eb",GradientType=1);
+}
+.Projects .container-proyectos article.proyecto:nth-child(2) {
+  background: rgb(105, 37, 145);
+  background: linear-gradient(0deg, rgb(105, 37, 145) 0%, rgb(100, 72, 254) 50%, rgb(96, 5, 148) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#692591",endColorstr="#600594",GradientType=1);
+}
+.Projects .container-proyectos article.proyecto:nth-child(3) {
+  background: rgb(116, 96, 146);
+  background: linear-gradient(0deg, rgb(116, 96, 146) 0%, rgb(22, 23, 34) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#746092",endColorstr="#161722",GradientType=1);
+}
+.Projects .container-proyectos article.proyecto:nth-child(4) {
+  background: rgb(248, 233, 221);
+  background: linear-gradient(0deg, rgb(248, 233, 221) 0%, rgb(236, 119, 95) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9dd",endColorstr="#ec775f",GradientType=1);
+}
+.Projects .container-proyectos article.proyecto:nth-child(5) {
+  background: rgb(82, 255, 168);
+  background: linear-gradient(0deg, rgb(82, 255, 168) 0%, rgb(50, 58, 73) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#52ffa8",endColorstr="#323a49",GradientType=1);
 }
 
 * {

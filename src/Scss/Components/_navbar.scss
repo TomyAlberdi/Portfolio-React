@@ -12,6 +12,7 @@
         height: 12vh;
         background-color: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(20px);
+        z-index: 1000;
         img {
             @extend .hover;
             height: 12vh;
