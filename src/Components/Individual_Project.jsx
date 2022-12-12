@@ -22,9 +22,9 @@ const Individual_Project = ({id,img,title,icons,link}) => {
                     <div className="info">
                         <h2>{title}</h2>
                         <div className="icons">
-                            <i className={"fa-brands fa-"+icons[0]}></i>
-                            <i className={"fa-brands fa-"+icons[1]}></i>
-                            <i className={"fa-brands fa-"+icons[2]}></i>
+                            {icons.map((index,item) => {
+                                return <i className={"fa-brands fa-"+icons[item]} key={index}></i>
+                            })}
                         </div>
                     </div>
                 </div>
