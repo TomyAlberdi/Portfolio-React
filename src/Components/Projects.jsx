@@ -6,7 +6,7 @@ const Projects = () => {
 
     return (
         <ContextProvider>
-            <div className='Main Projects'>
+            <div className='Projects'>
                 <section className="container-proyectos">
                     <Individual_Project key={1} id={0} img='src\assets\todo-desktop.png' title="To-Do List with Themes" icons={["html5","sass","js"]} link="https://tomyalberdi.github.io/ToDo-App/" />
                     <Individual_Project key={2} id={1} img='src\assets\time-desktop.png' title="Time Tracking Dashboard" icons={["html5","sass","js"]} link="https://tomyalberdi.github.io/Time-Tracking-Dashboard/" />

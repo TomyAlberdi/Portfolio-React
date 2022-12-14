@@ -5,6 +5,11 @@
     overflow: hidden;
     background-color: inherit !important;
     padding: 0 !important;
+    margin: 3vh 0;
+    padding: 3vh;
+    border-radius: 15px;
+    width: 97%;
+    min-width: 75vh;
     .container-proyectos {
         @include mixins.flex-container(row, center, stretch);
         overflow: hidden;

@@ -3,6 +3,7 @@
 @use "./Components/footer";
 @use "./Components/home";
 @use "./Components/projects";
+@use "./Components/skills";
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 * {
@@ -29,5 +30,6 @@ main {
         background-color: #222b51;
         width: 97%;
         min-width: 75vh;
+        @include mixins.shadow(#1a213f);
     }
 }

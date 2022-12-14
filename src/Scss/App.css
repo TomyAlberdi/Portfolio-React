@@ -126,6 +126,11 @@
   overflow: hidden;
   background-color: inherit !important;
   padding: 0 !important;
+  margin: 3vh 0;
+  padding: 3vh;
+  border-radius: 15px;
+  width: 97%;
+  min-width: 75vh;
 }
 .Projects .container-proyectos {
   display: flex;
@@ -314,4 +319,5 @@ main div.Main {
   background-color: #222b51;
   width: 97%;
   min-width: 75vh;
+  box-shadow: 6px 8px 16px 0px #1a213f;
 }/*# sourceMappingURL=App.css.map */
