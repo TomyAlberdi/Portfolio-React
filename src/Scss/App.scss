@@ -23,11 +23,11 @@ body {
 }
 main {
     @include mixins.flex-container(column, center, center);
+    padding: 1.5vh 0;
     div.Main {
-        margin: 3vh 0;
+        margin: 1.5vh 0;
         padding: 3vh;
         border-radius: 15px;
-        background-color: #222b51;
         width: 97%;
         min-width: 75vh;
         @include mixins.shadow(#1a213f);

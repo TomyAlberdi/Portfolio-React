@@ -1,0 +1,14 @@
+@use "./mixins";
+
+.frontend {
+    background-color: #015461;
+}
+.backend {
+    background-color: #962c28;
+}
+.infra {
+    background-color: #513671;
+}
+.soft {
+    background-color: #5c7563;
+}

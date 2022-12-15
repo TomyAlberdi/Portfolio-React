@@ -2,6 +2,7 @@
 
 .Home-Presentacion {
     @include mixins.flex-container(row, center, center);
+    background-color: #222b51;
     .info {
         @include mixins.flex-container(column, flex-start, flex-start);
         gap: 2vh;
@@ -18,9 +19,9 @@
     }
 }
 .Home-Educacion {
-    margin-top: 0.25vh !important;
     @include mixins.flex-container(column, flex-start, flex-start);
     gap: 2vh;
+    background-color: #222b51;
     h2 {
         font-size: 2rem;
     }

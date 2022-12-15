@@ -17,12 +17,14 @@
         max-width: 1400px;
         width: calc(100% - 100px);
         height: 80vh;
+        padding: 3vh;
         article.proyecto {
             &:hover {
                 transform: scale(1.03);
                 transition: 0.7s ease all;
                 transition-delay: 0s;
             }
+            @include mixins.shadow(#1a213f);
             transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
             position: relative;
             overflow: hidden;

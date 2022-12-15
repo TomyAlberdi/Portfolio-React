@@ -75,6 +75,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  background-color: #222b51;
 }
 .Home-Presentacion .info {
   display: flex;
@@ -95,12 +96,12 @@
 }
 
 .Home-Educacion {
-  margin-top: 0.25vh !important;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
   gap: 2vh;
+  background-color: #222b51;
 }
 .Home-Educacion h2 {
   font-size: 2rem;
@@ -142,8 +143,10 @@
   max-width: 1400px;
   width: calc(100% - 100px);
   height: 80vh;
+  padding: 3vh;
 }
 .Projects .container-proyectos article.proyecto {
+  box-shadow: 6px 8px 16px 0px #1a213f;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
   position: relative;
   overflow: hidden;
@@ -288,6 +291,22 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#52ffa8",endColorstr="#323a49",GradientType=1);
 }
 
+.frontend {
+  background-color: #015461;
+}
+
+.backend {
+  background-color: #962c28;
+}
+
+.infra {
+  background-color: #513671;
+}
+
+.soft {
+  background-color: #5c7563;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -311,12 +330,12 @@ main {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding: 1.5vh 0;
 }
 main div.Main {
-  margin: 3vh 0;
+  margin: 1.5vh 0;
   padding: 3vh;
   border-radius: 15px;
-  background-color: #222b51;
   width: 97%;
   min-width: 75vh;
   box-shadow: 6px 8px 16px 0px #1a213f;
