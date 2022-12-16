@@ -353,6 +353,12 @@
 .skill.soft {
   background-color: #5c7563;
 }
+.skill.soft section.enum {
+  grid-template-rows: repeat(2, 1fr);
+}
+.skill.soft section.enum .div3, .skill.soft section.enum .div4 {
+  border-bottom: 2px solid white;
+}
 
 .Contact {
   display: flex;

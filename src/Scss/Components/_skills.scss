@@ -4,7 +4,7 @@
     section.enum {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3, 1fr); 
+        grid-template-rows: repeat(3, 1fr);
         div {
             height: 22.5vh;
             padding: 1.5vh;
@@ -60,5 +60,11 @@
     }
     &.soft {
         background-color: #5c7563;
+        section.enum {
+            grid-template-rows: repeat(2, 1fr);      
+            .div3, .div4 {
+                border-bottom: 2px solid white;
+            }      
+        }
     }
 }
