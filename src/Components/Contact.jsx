@@ -20,7 +20,6 @@ const Contact = () => {
                     <h3>WhatsApp</h3>
                 </a>
             </section>
-            <Contact_form />
         </div>
     )
 }
