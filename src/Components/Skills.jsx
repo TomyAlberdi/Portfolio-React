@@ -13,19 +13,19 @@ const Skills = () => {
                         <h2>Desarrollo Web Básico:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
+                                <li>SASS / SCSS</li>
+                                <li>Flexbox</li>
+                                <li>Grid</li>
                             </ul>
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>Media Queries y Accesibilidad</li>
+                                <li>Formularios</li>
+                                <li>Manipulación del DOM</li>
                             </ul>
                             <ul>
-                                <li>Skill7</li>
-                                <li>Skill8</li>
-                                <li>Skill9</li>
+                                <li>Web Interactiva / Eventos</li>
+                                <li>JSON, SessionStorage y LocalStorage</li>
+                                <li>APIs, Promesas y Try/Catch</li>
                             </ul>
                         </article>
                     </div>
@@ -41,14 +41,14 @@ const Skills = () => {
                         <h2>Librerías y Frameworks:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
+                                <li>Componentes Funcionales</li>
+                                <li>Props</li>
+                                <li>Hooks: useState, useEffect, useCallback y useMemo</li>
                             </ul>
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>React Router</li>
+                                <li>React Testing: Componentes y Hooks</li>
+                                <li>Context Global, useReducer</li>
                             </ul>
                         </article>
                     </div>
@@ -56,14 +56,14 @@ const Skills = () => {
                         <h2>JavaScript Vanilla:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
+                                <li>Variables, tipos de datos y operadores</li>
+                                <li>Funciones y Arrow Functions</li>
+                                <li>If ternario, Switch y ciclos</li>
                             </ul>
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>Arrays, Matrices y Objetos</li>
+                                <li>Algoritmos de ordenación (Bubble Sort)</li>
+                                <li>Algoritmos de búsqueda (Búsqueda Binaria)</li>
                             </ul>
                         </article>
                     </div>
@@ -79,14 +79,14 @@ const Skills = () => {
                         <h2>Programación Orientada a Objetos:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>Relaciones entre clases (Agregación, Composición)</li>
+                                <li>Herencia, Clases Abstractas, Polimorfismo</li>
+                                <li>Interfaces, Comparable</li>
                             </ul>
                             <ul>
-                                <li>Skill7</li>
-                                <li>Skill8</li>
-                                <li>Skill9</li>
+                                <li>Colecciones: List, Set y Map</li>
+                                <li>Excepciones</li>
+                                <li>Patrones de desarrollo</li>
                             </ul>
                         </article>
                     </div>
@@ -100,29 +100,29 @@ const Skills = () => {
                         <h2>Bases de datos:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
+                                <li>Entidades, Atributos y Relaciones</li>
+                                <li>SQL Queries: CRUD</li>
+                                <li>Joins y Vistas</li>
                             </ul>
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>Índices</li>
+                                <li>Stored Procedures</li>
+                                <li>ORMs</li>
                             </ul>
                         </article>
                     </div>
                     <div className="div5 exp">
-                        <h2>Creación de APIs REST:</h2>
+                        <h2>Creación de APIs REST con Java:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
+                                <li>Maven y H2 DataBase</li>
+                                <li>Spring Boot</li>
+                                <li>MVC: Modelo, Vista y Controlador</li>
                             </ul>
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>ORM: Hibernate y Spring Data</li>
+                                <li>Spring Security: Login y roles de usuarios</li>
+                                <li>Unit Testing de Servicios</li>
                             </ul>
                         </article>
                     </div>
@@ -140,19 +140,9 @@ const Skills = () => {
                         <h2>Arquitectura Cliente-Servidor:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
-                            </ul>
-                            <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
-                            </ul>
-                            <ul>
-                                <li>Skill7</li>
-                                <li>Skill8</li>
-                                <li>Skill9</li>
+                                <li>Conocimientos de hardware y arquitectura</li>
+                                <li>Redes y protocolos de Internet, Modelo OSI</li>
+                                <li>Seguridad activa y pasiva</li>
                             </ul>
                         </article>
                     </div>
@@ -165,17 +155,17 @@ const Skills = () => {
                         <i className="fa-brands fa-docker"></i>
                     </div>
                     <div className="div4 exp">
-                        <h2>Virtualización:</h2>
+                        <h2>Virtualización y Cloud Computing:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
+                                <li>Docker: Container y Docker Compose</li>
+                                <li>Serverless</li>
+                                <li>AWS</li>
                             </ul>
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>Administración de Máquinas Virtuales</li>
+                                <li>Configuration Management</li>
+                                <li>Linux / VirtualBox</li>
                             </ul>
                         </article>
                     </div>
@@ -183,14 +173,9 @@ const Skills = () => {
                         <h2>Scripting:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
-                            </ul>
-                            <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>Bash</li>
+                                <li>PowerShell</li>
+                                <li>Python</li>
                             </ul>
                         </article>
                     </div>
@@ -207,19 +192,18 @@ const Skills = () => {
                         <h2>Metodologías de trabajo:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
+                                <li>Ciclos de desarrollo de software</li>
+                                <li>Métodos ágiles</li>
+                                <li>Lean y Kanban</li>
                             </ul>
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>Scrum: Artefactos y Eventos</li>
+                                <li>Visión de producto: MVP</li>
+                                <li>Design Thinking</li>
                             </ul>
                             <ul>
-                                <li>Skill7</li>
-                                <li>Skill8</li>
-                                <li>Skill9</li>
+                                <li>Product RoadMap</li>
+                                <li>Métricas de agilidad</li>
                             </ul>
                         </article>
                     </div>
@@ -236,14 +220,14 @@ const Skills = () => {
                         <h2>UX/UI:</h2>
                         <article className="lists">
                             <ul>
-                                <li>Skill1</li>
-                                <li>Skill2</li>
-                                <li>Skill3</li>
+                                <li>Diseño de Experiencia (UX)</li>
+                                <li>Diseño de Interfaz (UI)</li>
+                                <li>Convergencia y Divergencia</li>
                             </ul>
                             <ul>
-                                <li>Skill4</li>
-                                <li>Skill5</li>
-                                <li>Skill6</li>
+                                <li>Content Prototype y UX Writing</li>
+                                <li>User Flow</li>
+                                <li>Prototipado y Patrones de diseño</li>
                             </ul>
                         </article>
                     </div>
