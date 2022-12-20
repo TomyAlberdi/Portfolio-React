@@ -29,7 +29,7 @@
         }
         &.mail {
             @include mixins.flex-container(column,center,center);
-            gap: 1.9vh;
+            gap: 2.3vh;
             .mail_link {
                 @include mixins.flex-container(row,center,center);
                 gap: 2vh;
@@ -46,6 +46,7 @@
                 i {
                     font-size: 2rem;
                 }
+                margin-bottom: 2.3vh;
             }
         }
     }
