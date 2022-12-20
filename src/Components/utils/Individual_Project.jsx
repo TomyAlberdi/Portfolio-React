@@ -1,5 +1,5 @@
 import { React, useContext } from "react";
-import { ContextProyecto } from "./utils/projects_context";
+import { ContextProyecto } from "./projects_context";
 
 const Individual_Project = ({id,img,title,icons,link}) => {
 

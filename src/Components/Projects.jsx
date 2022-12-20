@@ -1,5 +1,5 @@
 import { React } from 'react'
-import Individual_Project from './Individual_Project'
+import Individual_Project from './utils/Individual_Project'
 import { ContextProvider } from './utils/projects_context'
 
 const Projects = () => {
