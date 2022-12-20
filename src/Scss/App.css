@@ -377,7 +377,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: #222b51;
-  gap: 12.5vh;
+  gap: 11vh;
 }
 .Contact section.links {
   display: grid;
@@ -395,7 +395,7 @@
   border-radius: 15px;
 }
 .Contact section.links a i {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 .Contact section.links a:nth-child(1) {
   grid-area: 1/1/2/2;
@@ -415,6 +415,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  gap: 1.9vh;
 }
 .Contact section.mail .mail_link {
   display: flex;

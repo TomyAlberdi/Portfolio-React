@@ -3,7 +3,7 @@
 .Contact {
     @include mixins.flex-container(column,center,center);
     background-color: #222b51;
-    gap: 12.5vh;
+    gap: 11vh;
     section {
         &.links {
             display: grid;
@@ -16,7 +16,7 @@
                 padding: 1vw;
                 border-radius: 15px;
                 i {
-                    font-size: 4rem;
+                    font-size: 4.5rem;
                 }
                 &:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
                 &:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
@@ -29,6 +29,7 @@
         }
         &.mail {
             @include mixins.flex-container(column,center,center);
+            gap: 1.9vh;
             .mail_link {
                 @include mixins.flex-container(row,center,center);
                 gap: 2vh;
