@@ -3,7 +3,7 @@
 .Contact {
     @include mixins.flex-container(column,center,center);
     background-color: #222b51;
-    gap: 2vh;
+    gap: 12.5vh;
     section {
         &.links {
             display: grid;
@@ -24,6 +24,26 @@
                 &:hover {
                     background-color: rgba(0, 0, 0, 0.3);
                     transition: 0.25s ease-in-out;
+                }
+            }
+        }
+        &.mail {
+            @include mixins.flex-container(column,center,center);
+            .mail_link {
+                @include mixins.flex-container(row,center,center);
+                gap: 2vh;
+                background-color: #2f3a6b;
+                padding: 2vh;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #3a4784;
+                }
+                &.copied {
+                    background-color: rgb(41, 81, 41);
+                }
+                i {
+                    font-size: 2rem;
                 }
             }
         }

@@ -377,7 +377,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: #222b51;
-  gap: 2vh;
+  gap: 12.5vh;
 }
 .Contact section.links {
   display: grid;
@@ -409,6 +409,32 @@
 .Contact section.links a:hover {
   background-color: rgba(0, 0, 0, 0.3);
   transition: 0.25s ease-in-out;
+}
+.Contact section.mail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.Contact section.mail .mail_link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vh;
+  background-color: #2f3a6b;
+  padding: 2vh;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Contact section.mail .mail_link:hover {
+  background-color: #3a4784;
+}
+.Contact section.mail .mail_link.copied {
+  background-color: rgb(41, 81, 41);
+}
+.Contact section.mail .mail_link i {
+  font-size: 2rem;
 }
 .Contact .ContactForm {
   width: 97%;
