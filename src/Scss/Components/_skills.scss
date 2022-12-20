@@ -1,70 +1,66 @@
 @use "./mixins";
 
 .skill {
-    section.enum {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        div {
-            height: 22.5vh;
-            padding: 1.5vh;
-            border-top: 2px solid white;
-            &.exp {
-                .lists {
-                    @include mixins.flex-container(row,space-around,center);
-                    padding: 2vh 2vh 0 2vh;
-                    ul {
-                        li:not(:last-child) {
-                            margin-bottom: 1.5vh;
-                        }
-                    }
-                }
+    position: relative;
+    div.menu {
+        @include mixins.flex-container(row,space-around,center);
+        .option {
+            @include mixins.flex-container(row,center,center);
+            gap: 1.5vw;
+            font-size: 4rem;
+            padding: 25px;
+            border-radius: 20px;
+            transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+                transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
             }
-            &.ico {
-                @include mixins.flex-container(row,space-around,center);
-                font-size: 3.5rem;
-            }
-            &.div1 { 
-                grid-area: 1 / 1 / 2 / 5;
-                border-right: 2px solid white;
-            }
-            &.div2 { 
-                grid-area: 1 / 5 / 2 / 7; 
-            }
-            &.div3 { 
-                grid-area: 2 / 1 / 3 / 3; 
-                border-right: 2px solid white;
-            }
-            &.div4 { 
-                grid-area: 2 / 3 / 3 / 7; 
-            }
-            &.div5 { 
-                grid-area: 3 / 1 / 4 / 5; 
-                border-right: 2px solid white;
-                border-bottom: 2px solid white;
-            }
-            &.div6 { 
-                grid-area: 3 / 5 / 4 / 7; 
-                border-bottom: 2px solid white;
-            } 
         }
     }
-    &.frontend {
-        background-color: #015461;
-    }
-    &.backend {
-        background-color: #962c28;
-    }
-    &.infra {
-        background-color: #513671;
-    }
-    &.soft {
-        background-color: #5c7563;
-        section.enum {
-            grid-template-rows: repeat(2, 1fr);      
-            .div3, .div4 {
-                border-bottom: 2px solid white;
-            }      
+    div.selected_skill {
+        border-radius: inherit;
+        width: 100%;
+        padding: 3vh;
+        left: 0;
+        top: 0;
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+        display: none;
+        height: 30vh;
+        z-index: 9;
+        .header {
+            @include mixins.flex-container(row,space-between,center);
+            button {
+                @include mixins.flex-container(row,center,center);
+                border-radius: 50%;
+                width: 3vh;
+                height: 3vh;
+                padding: 3vh;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.3);
+                cursor: pointer;
+            }
+            margin-bottom: 2vh;
+        }
+        ul {
+            margin: 3vh;
+        }
+        &.active {
+            display: block;
+            transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
         }
     }
+}
+
+.Frontend {
+    background-color: #015461;
+}
+.Backend {
+    background-color: #962c28;
+}
+.Infraestructura {
+    background-color: #513671;
+}
+.SoftSkills {
+    background-color: #5c7563;
 }

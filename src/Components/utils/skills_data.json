@@ -1,0 +1,193 @@
+[
+    {   
+        "type":"Frontend",
+        "data":[
+            {
+                "id":0,
+                "icon":"fa-brands fa-html5",
+                "data":{
+                    "id":"html",
+                    "title":"HTML y SCSS",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":1,
+                "icon":"fa-brands fa-sass",
+                "data":{
+                    "id":"scss",
+                    "title":"SASS",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":2,
+                "icon":"fa-brands fa-js",
+                "data":{
+                    "id":"js",
+                    "title":"JS",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":3,
+                "icon":"fa-brands fa-react",
+                "data":{
+                    "id":"react",
+                    "title":"React",
+                    "text":"skills text"
+                }
+            }
+        ]
+    },
+    {
+        "type":"Backend",
+        "data":[
+            {
+                "id":4,
+                "icon":"fa-brands fa-java",
+                "data":{
+                    "id":"java",
+                    "title":"Java",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":5,
+                "icon":"fa-solid fa-database",
+                "data":{
+                    "id":"database",
+                    "title":"Database",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":6,
+                "icon":"fa-solid fa-layer-group",
+                "data":{
+                    "id":"layer",
+                    "title":"Layer",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":7,
+                "icon":"fa-solid fa-flask",
+                "data":{
+                    "id":"flask",
+                    "title":"Flask",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":8,
+                "icon":"fa-solid fa-lock",
+                "data":{
+                    "id":"lock",
+                    "title":"Lock",
+                    "text":"skills text"
+                }
+            }
+        ]
+    },
+    {
+        "type":"Infraestructura",
+        "data":[
+            {
+                "id":9,
+                "icon":"fa-solid fa-server",
+                "data":{
+                    "id":"server",
+                    "title":"Server",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":10,
+                "icon":"fa-solid fa-computer",
+                "data":{
+                    "id":"computer",
+                    "title":"Computer",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":11,
+                "icon":"fa-brands fa-aws",
+                "data":{
+                    "id":"aws",
+                    "title":"AWS",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":12,
+                "icon":"fa-brands fa-docker",
+                "data":{
+                    "id":"docker",
+                    "title":"Docker",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":13,
+                "icon":"fa-solid fa-terminal",
+                "data":{
+                    "id":"terminal",
+                    "title":"Terminal",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":14,
+                "icon":"fa-brands fa-python",
+                "data":{
+                    "id":"python",
+                    "title":"Python",
+                    "text":"skills text"
+                }
+            }
+        ]
+    },
+    {
+        "type":"SoftSkills",
+        "data":[
+            {
+                "id":15,
+                "icon":"fa-solid fa-arrows-split-up-and-left",
+                "data":{
+                    "id":"agile",
+                    "title":"Agile",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":16,
+                "icon":"fa-solid fa-users-gear",
+                "data":{
+                    "id":"gear",
+                    "title":"Gear",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":17,
+                "icon":"fa-solid fa-compass-drafting",
+                "data":{
+                    "id":"design",
+                    "title":"Design",
+                    "text":"skills text"
+                }
+            },
+            {
+                "id":18,
+                "icon":"fa-solid fa-object-group",
+                "data":{
+                    "id":"group",
+                    "title":"Group",
+                    "text":"skills text"
+                }
+            }
+        ]
+    }
+]
