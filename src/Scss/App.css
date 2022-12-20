@@ -13,7 +13,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  z-index: 1000;
+  z-index: 11;
 }
 .Navbar img {
   height: 12vh;
@@ -36,7 +36,7 @@
   justify-content: flex-start;
 }
 
-div.open_navbar {
+span.open_navbar {
   display: none;
 }
 
@@ -48,10 +48,31 @@ div.open_navbar {
 
 @media screen and (max-width: 765px) {
   .Navbar {
-    position: absolute;
-    z-index: -1;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.2s ease-in-out;
+  }
+  .Navbar div {
+    flex-direction: column;
+    width: inherit;
+  }
+  .Navbar div a {
+    width: inherit;
+    justify-content: center;
+  }
+  .Navbar .link_icon {
+    display: none;
+  }
+  .Navbar.opened {
+    transform: translateX(100vw);
+    transition: 0.2s ease-in-out;
   }
   span.open_navbar {
+    z-index: 12;
     display: block;
     position: fixed;
     bottom: 0.8vh;
@@ -59,7 +80,7 @@ div.open_navbar {
     font-size: 2rem;
   }
   span.open_navbar i:nth-child(1) {
-    color: #293462;
+    color: #384372;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -556,8 +577,10 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 1.5vh 0;
+  z-index: 10;
 }
 main div.Main {
+  z-index: 10;
   margin: 1.5vh 0;
   padding: 3vh;
   border-radius: 15px;

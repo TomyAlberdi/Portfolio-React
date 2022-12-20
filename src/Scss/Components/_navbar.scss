@@ -8,7 +8,7 @@
     height: 12vh;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
-    z-index: 1000;
+    z-index: 11;
     img {
         @extend .hover;
         height: 12vh;
@@ -26,7 +26,7 @@
         }
     }
 }
-div.open_navbar {
+span.open_navbar {
     display: none;
 }
 .hover:hover {
@@ -36,10 +36,31 @@ div.open_navbar {
 }
 @media screen and (max-width: 765px) {
     .Navbar {
-        position: absolute;
-        z-index: -1;
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        div {
+            flex-direction: column;
+            width: inherit;
+            a {
+                width: inherit;
+                justify-content: center;
+            }
+        }
+        .link_icon {
+            display: none;
+        }
+        transition: 0.2s ease-in-out;
+        &.opened {
+            transform: translateX(100vw);
+            transition: 0.2s ease-in-out;
+        }
     }
     span.open_navbar {
+        z-index: 12;
         display: block;
         position: fixed;
         bottom: 0.8vh;
@@ -47,7 +68,7 @@ div.open_navbar {
         font-size: 2rem;
         i {
             &:nth-child(1) {
-                color: #293462;
+                color: #384372;
             }
         }
     }
