@@ -15,10 +15,10 @@ const Navbar = () => {
         <>
             <div className='Navbar'>
                 <div>
-                    <Link to={'/'}>Inicio</Link>
-                    <Link to={'/proyectos'}>Proyectos</Link>
-                    <Link to={'/habilidades'}>Habilidades</Link>
-                    <Link to={'/contacto'}>Contacto</Link>
+                    <Link to={'/'} onClick={openNavbar}>Inicio</Link>
+                    <Link to={'/proyectos'} onClick={openNavbar}>Proyectos</Link>
+                    <Link to={'/habilidades'} onClick={openNavbar}>Habilidades</Link>
+                    <Link to={'/contacto'} onClick={openNavbar}>Contacto</Link>
                 </div>
                 <Link className='link_icon' to={'/'}><img src="src\assets\favicon.ico"/></Link>
             </div>
